@@ -1,0 +1,106 @@
+* { 
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+}
+html{
+    height:100%
+}
+body{background-image:url('https://quicksnooker.com/images/sturgeonBack.jpg');    
+	background-repeat: no-repeat;
+	background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.banner1{
+    background-color: red;
+    color: white;
+    font-weight: 100px;
+    width: 36%;
+    padding-left: 10%;
+    border: 2px solid red;
+    font-size: 120%;  
+}
+.banner2{
+    background-color:white;
+    opacity: 0.6;
+    color: black;
+    padding-left: 10%;
+    font-size: 120%;
+    height: 3em;
+}
+.banner3{
+    background-color: #61122b;
+    width:100%; /* nick added  ( make the bottom dark red bar fill the width of the screen */
+    /* padding-left: 10%; Nick moved from here */
+    font-size: 120%;
+    /*border: 0px solid red; nick removed - a 0px bored wont be visible */
+    
+}
+#outer{
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    /*display: inline-block; removed by nick*/
+}
+.BBC{
+    background-color: white;
+    color: red;
+    padding-left:.1em;padding-right:.1em; /* square up the BBC letters with some padding */
+    /*border: 1px solid red;*/
+}
+.par{
+    /*background-color: red; not needed now we are in a red span already*/
+    color: white;
+    padding-left: 2%;
+    padding-right: 5%;
+}
+.date{
+    background-color: black;
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    /*border: 1px solid black; a black border on a black box isn't doing anything useful */
+    border: 1px solid black;
+}
+.hol{
+    background-color: #61122b;
+    color: white;
+    padding-left: 5%;
+    /* padding-right: 40%; */
+    border: 0px solid  #61122b;
+    box-sizing: border-box;
+    /* float: right; */
+}
+
+.vPad{padding-top:.1em;padding-bottom:.1em;}
+.redBack{background-color:red}
+.pad10{padding-left:10%}
+.bottomHolder{background-color:rgb(78, 20, 32);width:100} /* added by nick */
+
+.square{
+    padding: 10px auto;
+    border: 1px solid red;
+}
+
+@keyframes tumbleIn{
+    0% {left:100%;transform: rotateX(0deg) scale(.1)}
+    100% {left:10%;transform: rotateX(1080deg) scale(1)}
+}
+.banner1{
+  animation-name: tumbleIn;
+  animation-duration: 5s;
+  animation-delay: 3s;
+  animation-iteration-count: 1; 
+}
+
+.banner2{
+    animation-name: tumbleIn;
+    animation-delay: 3s;
+    animation-iteration-count: 1; 
+}
+.banner3{
+    animation-name: tumbleIn;
+    animation-duration: 5s;
+    animation-iteration-count: 1; 
+}
+
